@@ -789,7 +789,7 @@ namespace winsw
 
         private static void InitLoggers(ServiceDescriptor d, bool enableCLILogging)
         {
-            Level logLevel = Level.Debug;
+            Level logLevel = Level.Info;
 
             // Legacy format from winsw-1.x: (DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " - " + message);
             PatternLayout pl = new PatternLayout { ConversionPattern = "%d %-5p - %m%n" };
